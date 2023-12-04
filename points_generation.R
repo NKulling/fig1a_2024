@@ -6,14 +6,14 @@ library(data.table)
 
 # Loading data ------------------------------------------------------------
 
-setwd("C:/Users/kuelling/Documents/Conferences/Fig1a/2023/code")
-file<-"C:/Users/kuelling/Documents/Conferences/Fig1a/2023/cheptel/px-x-0702000000_104.px"
-mun<-vect("C:/swissboundaries3d_2023-01_2056_5728.shp/swissBOUNDARIES3D_1_4_TLM_HOHEITSGEBIET.shp") # municipalities
+setwd("")
+file<-"px-x-0702000000_104.px"
+mun<-vect("swissboundaries3d_2023-01_2056_5728.shp/swissBOUNDARIES3D_1_4_TLM_HOHEITSGEBIET.shp") # municipalities
 
-wolf<-rast("C:/Canis.lupus_reg_covariate_ensemble.tif") # wolf raster map
-evals<-fread("C:/evals_reg_covariate.csv") # wolf map binarization data
+wolf<-rast("Canis.lupus_reg_covariate_ensemble.tif") # wolf raster map
+evals<-fread("evals_reg_covariate.csv") # wolf map binarization data
 
-cntons<-vect("C:/swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET.shp") # cantonal data 
+cntons<-vect("swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET.shp") # cantonal data 
 
 
 # Processing OFS data -----------------------------------------------------
